@@ -1,101 +1,197 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+
+      <section>
+
+        <div className="bg-gray-800  mt-12 ">
+          <div className="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
+            <h1 className="font-bold pl-2 ">پنل ادمین</h1>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex flex-wrap justify-center bg-white">
+          {/* Metric Cards */}
+          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+            <div className="bg-gradient-to-b from-green-200 to-green-100 border-b-4 border-green-600 rounded-lg shadow-xl p-5">
+              <div className="flex items-center">
+                <div className="rounded-full p-5 bg-green-600">
+                  <i className="fa fa-wallet fa-2x text-white" />
+                </div>
+                <div className="ml-4 text-right md:text-center">
+                  <h2 className="font-bold uppercase text-gray-600">
+                    تعدادکاربران
+                  </h2>
+                  <p className="font-bold text-3xl text-slate-500">
+                    3249{" "}
+                    <span className="text-green-500">
+                      
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+            <div className="bg-gradient-to-b from-pink-200 to-pink-100 border-b-4 border-pink-500 rounded-lg shadow-xl p-5">
+              <div className="flex items-center">
+                <div className="rounded-full p-5 bg-pink-600">
+                  <i className="fas fa-users fa-2x text-white" />
+                </div>
+                <div className="ml-4 text-right md:text-center">
+                  <h2 className="font-bold uppercase text-gray-600">مقدار درامد</h2>
+                  <p className="font-bold text-3xl text-slate-500">
+                    $249{" "}
+                    <span className="text-pink-500">
+                      <i className="fas fa-exchange-alt" />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+            <div className="bg-gradient-to-b from-yellow-200 to-yellow-100 border-b-4 border-yellow-600 rounded-lg shadow-xl p-5">
+              <div className="flex items-center">
+                <div className="rounded-full p-5 bg-yellow-600">
+                  <i className="fas fa-user-plus fa-2x text-white" />
+                </div>
+                <div className="ml-4 text-right md:text-center">
+                  <h2 className="font-bold uppercase text-gray-600">تعداد رزرو ها</h2>
+                  <p className="font-bold text-3xl text-slate-500">
+                    2{" "}
+                    <span className="text-yellow-600">
+                      <i className="fas fa-caret-up" />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+            <div className="bg-gradient-to-b from-blue-200 to-blue-100 border-b-4 border-blue-500 rounded-lg shadow-xl p-5">
+              <div className="flex items-center">
+                <div className="rounded-full p-5 bg-blue-600">
+                  <i className="fas fa-server fa-2x text-white" />
+                </div>
+                <div className="ml-4 text-right md:text-center">
+                  <h2 className="font-bold uppercase text-gray-600">
+                  زمان فعالیت سرور
+                  </h2>
+                  <p className="font-bold text-2xl text-slate-500">20 روز</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+            <div className="bg-gradient-to-b from-indigo-200 to-indigo-100 border-b-4 border-indigo-500 rounded-lg shadow-xl p-5">
+              <div className="flex items-center">
+                <div className="rounded-full p-5 bg-indigo-600">
+                  <i className="fas fa-tasks fa-2x text-white" />
+                </div>
+                <div className="ml-4 text-right md:text-center">
+                  <h2 className="font-bold uppercase text-gray-600">تعداد وبلاگ های گذاشته شده</h2>
+                  <p className="font-bold text-3xl text-gray-600">10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 xl:w-1/3 p-6">
+            <div className="bg-gradient-to-b from-red-200 to-red-100 border-b-4 border-red-500 rounded-lg shadow-xl p-5">
+              <div className="flex items-center">
+                <div className="rounded-full p-5 bg-red-600">
+                  <i className="fas fa-inbox fa-2x text-white" />
+                </div>
+                <div className="ml-4 text-right md:text-center">
+                  <h2 className="font-bold uppercase text-gray-600">پیام های ثبت شده</h2>
+                  <p className="font-bold text-3xl text-gray-600">
+                    3{" "}
+                    <span className="text-red-500">
+                      <i className="fas fa-caret-up" />
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Table Card */}
+        <div className="flex justify-center items-center bg-gray-100 ms:mb-4 mb-20">
+          <div className="w-full md:w-1/2 xl:w-2/3 p-6">
+            <div className="bg-white border-transparent rounded-lg shadow-xl">
+              <div className="bg-gradient-to-b from-gray-300 to-gray-100 text-gray-800 border-b-2 border-gray-300 rounded-t-lg p-2">
+                <h2 className="font-bold uppercase text-gray-600">جدول</h2>
+              </div>
+              <div className="p-5">
+                <h1 className="text-3xl text-black pb-6">ثبت نامی ها</h1>
+
+                
+                <div className="w-full mt-6">
+
+                  <div className="bg-white overflow-auto">
+                    <table className="min-w-full bg-white">
+                      <thead className="bg-gray-800 text-white">
+                        <tr>
+                          <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">نام</th>
+                          <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">فامیلی</th>
+                          <th className="text-left py-3 px-4 uppercase font-semibold text-sm">تلفن</th>
+                          <th className="text-left py-3 px-4 uppercase font-semibold text-sm">ایمیل</th>
+                        </tr>
+                      </thead>
+                      <tbody className="text-gray-700">
+                        <tr>
+                          <td className="w-1/3 text-left py-3 px-4">امبر</td>
+                          <td className="w-1/3 text-left py-3 px-4">حسین</td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                          </td>
+                        </tr>
+                        <tr className="bg-gray-200">
+                          <td className="w-1/3 text-left py-3 px-4">Emma</td>
+                          <td className="w-1/3 text-left py-3 px-4">Johnson</td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="w-1/3 text-left py-3 px-4">علی</td>
+                          <td className="w-1/3 text-left py-3 px-4">احمدی</td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                          </td>
+                        </tr>
+                        <tr className="bg-gray-200">
+                          <td className="w-1/3 text-left py-3 px-4">مرتضی </td>
+                          <td className="w-1/3 text-left py-3 px-4">هاشمی</td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </>
   );
 }
