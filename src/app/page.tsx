@@ -25,7 +25,7 @@ export default function Home() {
                   <p className="font-bold text-3xl text-slate-500">
                     3249{" "}
                     <span className="text-green-500">
-                      
+
                     </span>
                   </p>
                 </div>
@@ -76,9 +76,9 @@ export default function Home() {
                 </div>
                 <div className="ml-4 text-right md:text-center">
                   <h2 className="font-bold uppercase text-gray-600">
-                  زمان فعالیت سرور
+                      تعداد خدمات های گذاشته شذه
                   </h2>
-                  <p className="font-bold text-2xl text-slate-500">20 روز</p>
+                  <p className="font-bold text-2xl text-slate-500">9</p>
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function Home() {
                   <i className="fas fa-inbox fa-2x text-white" />
                 </div>
                 <div className="ml-4 text-right md:text-center">
-                  <h2 className="font-bold uppercase text-gray-600">پیام های ثبت شده</h2>
+                  <h2 className="font-bold uppercase text-gray-600">تعداد عکس های گذاشته شده </h2>
                   <p className="font-bold text-3xl text-gray-600">
                     3{" "}
                     <span className="text-red-500">
@@ -120,12 +120,22 @@ export default function Home() {
           <div className="w-full md:w-1/2 xl:w-2/3 p-6">
             <div className="bg-white border-transparent rounded-lg shadow-xl">
               <div className="bg-gradient-to-b from-gray-300 to-gray-100 text-gray-800 border-b-2 border-gray-300 rounded-t-lg p-2">
-                <h2 className="font-bold uppercase text-gray-600">جدول</h2>
+                <h2 className="font-bold uppercase text-gray-600">رزرو</h2>
               </div>
-              <div className="p-5">
-                <h1 className="text-3xl text-black pb-6">ثبت نامی ها</h1>
+              <div className="p-5 ">
+                <div className="flex items-center justify-between">
+                  <h1 className="text-3xl font-bold text-black pb-6">رزروی ها</h1>
+                  
+                  <button
+                    className="text-white bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    type="button"
+                    
+                  >
+                   دیدن موارد بیشتر
+                  </button>
+                </div>
 
-                
+
                 <div className="w-full mt-6">
 
                   <div className="bg-white overflow-auto">
@@ -135,7 +145,8 @@ export default function Home() {
                           <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">نام</th>
                           <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">فامیلی</th>
                           <th className="text-left py-3 px-4 uppercase font-semibold text-sm">تلفن</th>
-                          <th className="text-left py-3 px-4 uppercase font-semibold text-sm">ایمیل</th>
+                          <th className="text-left py-3 px-4 uppercase font-semibold text-sm">روز</th>
+                          <th className="text-left py-3 px-4 uppercase font-semibold text-sm">ساعت</th>
                         </tr>
                       </thead>
                       <tbody className="text-gray-700">
@@ -146,7 +157,10 @@ export default function Home() {
                             <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
                           </td>
                           <td className="text-left py-3 px-4">
-                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                            <a className="hover:text-blue-500" href="">شنبه</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="">14-16</a>
                           </td>
                         </tr>
                         <tr className="bg-gray-200">
@@ -156,7 +170,10 @@ export default function Home() {
                             <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
                           </td>
                           <td className="text-left py-3 px-4">
-                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                            <a className="hover:text-blue-500" href="">یک شنبه</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="">12-14</a>
                           </td>
                         </tr>
                         <tr>
@@ -166,7 +183,10 @@ export default function Home() {
                             <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
                           </td>
                           <td className="text-left py-3 px-4">
-                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                            <a className="hover:text-blue-500" href="">دوشنبه</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="">10-12</a>
                           </td>
                         </tr>
                         <tr className="bg-gray-200">
@@ -176,7 +196,10 @@ export default function Home() {
                             <a className="hover:text-blue-500" href="tel:622322662">622322662</a>
                           </td>
                           <td className="text-left py-3 px-4">
-                            <a className="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a>
+                            <a className="hover:text-blue-500" href="">سه شنبه</a>
+                          </td>
+                          <td className="text-left py-3 px-4">
+                            <a className="hover:text-blue-500" href="">8-10</a>
                           </td>
                         </tr>
                       </tbody>
