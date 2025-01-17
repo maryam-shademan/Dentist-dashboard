@@ -68,7 +68,7 @@ function user() {
 
 
 
-      <div className="bg-white overflow-auto  mt-10">
+      <div className="bg-white overflow-auto  mt-10 px-2">
         <table className="min-w-full bg-white">
           <thead className="bg-gray-800 text-white ">
             <tr>

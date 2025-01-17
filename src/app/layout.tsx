@@ -34,14 +34,14 @@ export default function RootLayout({
           ></script>
         </Head>
         <div>
-          <h1>Next.js Example</h1>
+        
         </div>
       </head>
       <body
         className={`${geistSans.className} antialiased overflow-x-hidden`}
       >
         <div className="flex flex-col md:flex-row min-h-screen ">
-        <nav aria-label="alternative nav" className="bg-gray-800 shadow-xl md:h-screen w-full md:w-48 fixed md:fixed bottom-0 md:bottom-auto z-50">
+        <nav aria-label="alternative nav" className="bg-gray-800 shadow-xl md:h-screen w-full md:w-48   bottom-0 md:bottom-auto z-50">
 
             <div className="md:mt-12 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between overflow-hidden">
               <ul className="list-reset flex flex-row md:flex-col pt-3 md:py-3 px-1 md:px-2 text-center md:text-left">

@@ -5,11 +5,12 @@ export default function Home() {
 
       <section>
 
-        <div className="bg-gray-800  mt-12 ">
-          <div className="rounded-tl-3xl bg-gradient-to-r from-blue-900 to-gray-800 p-4 shadow text-2xl text-white">
-            <h1 className="font-bold pl-2 ">پنل ادمین</h1>
+        <div className="bg-gray-800 mt-12 flex justify-center items-center ">
+          <div className="rounded-tl-3xl  to-gray-800 p-4 shadow text-2xl text-white">
+            <h1 className="font-bold pl-2">پنل ادمین</h1>
           </div>
         </div>
+
         <div className="flex flex-wrap justify-center bg-white">
           {/* Metric Cards */}
           <div className="w-full md:w-1/2 xl:w-1/3 p-6">
@@ -76,7 +77,7 @@ export default function Home() {
                 </div>
                 <div className="ml-4 text-right md:text-center">
                   <h2 className="font-bold uppercase text-gray-600">
-                      تعداد خدمات های گذاشته شذه
+                    تعداد خدمات های گذاشته شذه
                   </h2>
                   <p className="font-bold text-2xl text-slate-500">9</p>
                 </div>
@@ -125,13 +126,13 @@ export default function Home() {
               <div className="p-5 ">
                 <div className="flex items-center justify-between">
                   <h1 className="text-3xl font-bold text-black pb-6">رزروی ها</h1>
-                  
+
                   <button
                     className="text-white bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                     type="button"
-                    
+
                   >
-                   دیدن موارد بیشتر
+                    دیدن موارد بیشتر
                   </button>
                 </div>
 
@@ -146,7 +147,7 @@ export default function Home() {
                           <th className="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">فامیلی</th>
                           <th className="text-left py-3 px-4 uppercase font-semibold text-sm">تلفن</th>
                           <th className="text-left py-3 px-4 uppercase font-semibold text-sm">روز</th>
-                          <th className="text-left py-3 px-4 uppercase font-semibold text-sm">ساعت</th>
+                          <th className="text-left py-3 px-6 uppercase font-semibold text-sm">ساعت</th>
                         </tr>
                       </thead>
                       <tbody className="text-gray-700">

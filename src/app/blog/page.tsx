@@ -71,7 +71,7 @@ function Blog() {
 
 
 {/*پست های گذاشته شده */}
-      <section id="recent-posts" className="py-12 bg-white">
+      <section id="recent-posts" className="py-12 bg-gray-100">
         <div className="container mx-auto text-center mb-14" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-gray-800">پست‌های اخیر وبلاگ</h2>
         </div>
